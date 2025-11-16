@@ -25,11 +25,17 @@ The application is structured to handle data retrieval, processing, and logging 
 
 ### 3. Application Structure
 The code is modularized to ensure high readability and maintainability:
-* `main.py`: Entry point, user menu, and command processing.
-* `mysql_connector.py`: Handles MySQL connection and search queries (keywords, genres, pagination).
-* `log_writer.py`: Handles connection to MongoDB and logging of new queries.
-* `log_stats.py`: Retrieves and processes popular/recent queries from MongoDB.
-* `formatter.py`: Utility functions for clean console output formatting.
+* `main1.py`: Entry point, user menu, and command processing.
+* `mysql_connector1.py`: Handles MySQL connection and search queries (keywords, genres, pagination).
+* `log_writer1.py`: Handles connection to MongoDB and logging of new queries.
+* `log_stats1.py`: Retrieves and processes popular/recent queries from MongoDB.
+* `formatter1.py`: Utility functions for clean console output formatting.
+
+---
+
+## 🎨 User Experience and Readability
+
+A key focus of this CLI application is an enhanced user experience. The console output utilizes **diverse color schemes and emojis** to improve readability, draw user attention to key information, and make the interaction more engaging and user-friendly.
 
 ---
 
@@ -47,11 +53,37 @@ To run this application, you need access to a MySQL Sakila database and a runnin
     pip install -r requirements.txt
     ```
 3.  **Configure Database Connections:**
-    * Create a configuration file (e.g., `config.py` or use environment variables) to safely store your MySQL (host, user, password) and MongoDB connection strings. **Do not commit sensitive data.**
+    * Ensure your `local_settings1.py` file is correctly configured with your MySQL (host, user, password) and MongoDB connection details. **Remember: `local_settings1.py` is excluded from the repository via `.gitignore` for security.**
 4.  **Run the application:**
     ```bash
-    python main.py
+    python main1.py
     ```
+
+---
+## 🖼️ Project Demonstration
+
+This section showcases the application's interactive console interface and core functionalities.
+
+### 1. Main Menu and Keyword Search Example
+![Initial menu and a keyword search for 'dinosaur'](7.png)
+
+### 2. Handling No Search Results
+![Demonstration of graceful handling for no search results](8.png)
+
+### 3. Paginated Keyword Search
+![Paginated keyword search showing multiple pages of results](9.png)
+
+### 4. Genre and Year Search - Input Guidance
+![Displaying available genres and year range for filtered search](10.png)
+
+### 5. Paginated Genre and Year Search Results
+![Paginated search results for a specific genre and year range](11.png)
+
+### 6. Search Statistics (Popular and Recent Queries)
+![Displaying the list of 5 popular and 5 recent search queries](12.png)
+
+### 7. Exiting the Application
+![User gracefully exiting the Movie Explorer application](13.png)
 
 ---
 ## 🖼️ Project Demonstration
