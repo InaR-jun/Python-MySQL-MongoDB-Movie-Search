@@ -84,8 +84,3 @@ This section showcases the application's interactive console interface and core 
 
 ### 7. Exiting the Application
 ![User gracefully exiting the Movie Explorer application](13.png)
-
----
-## 🖼️ Project Demonstration
-
-[Placeholder for Demonstration Screenshots]
